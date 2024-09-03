@@ -1,9 +1,6 @@
 {
     "courses": [
-        {
-            "title": "Windows-commands.md",
-            "file": "PDF/Sheets/windows-commands.md"
-        },        {
+         {
             "title": "Cisco_IOS_(Routers_and_Switches).md",
             "file": "PDF/Sheets/Cisco_IOS_(Routers_and_Switches).md"
         },        {
