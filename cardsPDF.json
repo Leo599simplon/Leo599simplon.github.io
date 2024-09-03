@@ -1,0 +1,20 @@
+{
+    "courses": [
+        {
+            "title": "Hiérarchie standard du système de fichier linux",
+            "file": "PDF/Filesystem%20Hierarchy%20Standard%20linux.pdf"
+        },
+        {
+            "title": "Kali pour les noobs",
+            "file": "PDF/Kali-Linux-Revealed-1st-edition.pdf"
+        },
+        {
+            "title": "Le livre des commandes linux",
+            "file": "PDF/The%20linux%20command%20line%20book.pdf"
+        },
+        {
+            "title": "Linux et devops",
+            "file": "PDF/The%20linux%20DevOps%20Handbook.pdf"
+        }
+    ]
+}

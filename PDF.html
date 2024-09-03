@@ -7,40 +7,26 @@
     <title>Administration Réseaux - Cours</title>
     <link rel="stylesheet" href="style.css">
     <script src="menu.js" defer></script>
-
+    <script src="cardsPDF.js" defer></script>
 </head>
 
 <body>
-        <!-- Placeholder for the header -->
-        <div id="header-placeholder"></div>
+    <!-- Placeholder for the header -->
+    <div id="header-placeholder"></div>
 
-        <!-- Placeholder for the menu -->
-        <div id="nav-placeholder"></div>
+    <!-- Placeholder for the menu -->
+    <div id="nav-placeholder"></div>
 
-        
-            <main>
-                <section class="intro">
-                    <h2>Bienvenue sur la plateforme de cours en administration réseaux</h2>
-                    <p>Ce site a pour but de centraliser les connaissances de la formation TSSR</p>
-                </section>
-            
-                <section class="course-categories">
-                    <div class="card" onclick="window.location.href='PDF/Filesystem%20Hierarchy%20Standard%20linux.pdf';">
-                        <h3>Hiérarchie standard du système de fichier linux</h3>
-                    </div>
-                    <div class="card" onclick="window.location.href='PDF/Kali-Linux-Revealed-1st-edition.pdf';">
-                        <h3>Kali pour les noobs</h3>
-                    </div>
-                    <div class="card" onclick="window.location.href='PDF/The%20linux%20command%20line%20book.pdf';">
-                        <h3>Le livre des commandes linux</h3>
-                    </div>
-                    <div class="card" onclick="window.location.href='PDF/The%20linux%20DevOps%20Handbook.pdf';">
-                        <h3>Linux et devops</h3>
-                    </div>
-                </section>
-            </main>
-        
-        
+    <main>
+        <section class="intro">
+            <h2>Bienvenue sur la plateforme de cours en administration réseaux</h2>
+            <p>Ce site a pour but de centraliser les connaissances de la formation TSSR</p>
+        </section>
+
+        <section class="cards-categories" id="cards-categories">
+            <!-- Les cartes seront générées ici par JavaScript -->
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Administration Réseaux - Tous droits réservés.</p>

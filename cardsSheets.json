@@ -1,0 +1,79 @@
+{
+    "courses": [
+        {
+            "title": "Windows-commands.md",
+            "file": "PDF/Sheets/windows-commands.md"
+        },        {
+            "title": "Cisco_IOS_(Routers_and_Switches).md",
+            "file": "PDF/Sheets/Cisco_IOS_(Routers_and_Switches).md"
+        },        {
+            "title": "Linux_Commands",
+            "file": "PDF/Sheets/Linux_Commands_Cheat_Sheet.md"
+        },        {
+            "title": "UbuntuServerCLI",
+            "file": "PDF/Sheets/UbuntuServerCLIcheatsheet2024v6.pdf"
+        },        {
+            "title": "Web_Tech_Test_2_Leak_Answers.md",
+            "file": "PDF/Sheets/Web_Tech_Test_2_Leak_Answers.md"
+        },        {
+            "title": "keyboard-shortcuts-windows.pdf",
+            "file": "PDF/Sheets/keyboard-shortcuts-windows.pdf"
+        },
+        {
+            "title": "Hacking Tools",
+            "file": "PDF/Sheets/hacking-tools-cheat-sheet.pdf"
+        },
+        {
+            "title": "IPv4 Subnets",
+            "file": "PDF/Sheets/IPv4-SUBNETS-cheat-sheet-v1.pdf"
+        },
+        {
+            "title": "Linux File Permissions",
+            "file": "PDF/Sheets/Linux File Permissions Cheat Sheet.pdf"
+        },
+        {
+            "title": "Linux",
+            "file": "PDF/Sheets/Linux-cheat-sheet-v1.pdf"
+        },
+        {
+            "title": "Nmap",
+            "file": "PDF/Sheets/nmap_cheet_sheet_v7.pdf"
+        },
+        {
+            "title": "Common Ports",
+            "file": "PDF/Sheets/Common Ports Cheat Sheet.pdf"
+        },
+        {
+            "title": "OSI Reference Model",
+            "file": "PDF/Sheets/OSI Reference Model Cheat Sheet.pdf"
+        },
+        {
+            "title": "Powershell",
+            "file": "PDF/Sheets/Powershell cheat sheet-1.pdf"
+        },
+        {
+            "title": "Powershell 2",
+            "file": "PDF/Sheets/Powershell cheat sheet.pdf"
+        },
+        {
+            "title": "SSH Commands",
+            "file": "PDF/Sheets/ssh commands cheat sheet.pdf"
+        },
+        {
+            "title": "Vi",
+            "file": "PDF/Sheets/Vi Cheat Sheet.pdf"
+        },
+        {
+            "title": "Windows Command Line",
+            "file": "PDF/Sheets/Windows Command Line Cheat Sheet.pdf"
+        },
+        {
+            "title": "Wireshark",
+            "file": "PDF/Sheets/Wireshark-Cheat-Sheet-v1.pdf"
+        },
+        {
+            "title": "XPath",
+            "file": "PDF/Sheets/Xpath Cheat Sheet.pdf"
+        }
+    ]
+}

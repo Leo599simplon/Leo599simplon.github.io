@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visionneuse Markdown</title>
+    <!-- Inclure le script Showdown depuis CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.0.5/dist/showdown.min.js" charset="utf-8" defer></script>
+</head>
+<body>
+    <h1>Visionneuse de fichiers Markdown</h1>
+    <div id="markdown-preview"></div>
+
+    <script>
+        // Fonction pour charger le fichier Markdown et l'afficher
+        function loadMarkdown(filePath) {
+            console.log(`Chargement du fichier Markdown à partir du chemin : ${filePath}`);
+
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        console.error(`Erreur HTTP : ${response.status}`);
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(markdownText => {
+                    console.log('Fichier Markdown chargé avec succès.');
+                    const converter = new showdown.Converter();
+                    const htmlContent = converter.makeHtml(markdownText);
+                    document.getElementById('markdown-preview').innerHTML = htmlContent;
+                })
+                .catch(error => {
+                    console.error('Erreur lors du chargement du fichier Markdown :', error);
+                    document.getElementById('markdown-preview').innerHTML = 'Erreur lors du chargement du fichier.';
+                });
+        }
+
+        // Récupérer le paramètre d'URL et charger le fichier Markdown correspondant
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const filePath = urlParams.get('file');
+            console.log(`Paramètre d'URL 'file' : ${filePath}`);
+
+            if (filePath) {
+                loadMarkdown(filePath);
+            } else {
+                console.warn('Aucun fichier spécifié dans l\'URL.');
+                document.getElementById('markdown-preview').innerHTML = 'Aucun fichier spécifié.';
+            }
+        });
+    </script>
+</body>
+</html>
