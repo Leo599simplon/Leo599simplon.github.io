@@ -1,0 +1,14 @@
+{
+    "courses": [
+        {
+            "title": "Solution VOIP Xivo",
+            "file": "Briefs/xivo.pdf",
+            "URL" : "https://simplonline.co/briefs/0cc01078-af9f-41cf-9b44-6d1ac5ade56c"
+        },
+        {
+            "title": "Intervenir dans un environnement cloud computing",
+            "file": "https://docs.google.com/document/d/1Mfd784A9xJ7Meu0WPcPFkQKWhsWcnLvjlNE_sTYK6sg/edit",
+            "URL" : "https://simplonline.co/briefs/9d2a34e3-6a1d-4574-aaa5-cdae0f2f5a94"
+        }
+    ]
+}

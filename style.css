@@ -307,3 +307,14 @@ footer {
 .folder a:hover {
     text-decoration: underline;
 }
+
+.card-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1a73e8; /* Couleur de lien */
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
