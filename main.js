@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (currentPage.includes('briefs.html')) {
         // Page des briefs
         loadData('cardsBriefs.json', 'brief');
-    } else if (currentPage.includes('cours.html')) {
+    } else if (currentPage.includes('Cours.html')) {
         // Page des cours
         loadData('cardsCours.json', 'cours');
     }
