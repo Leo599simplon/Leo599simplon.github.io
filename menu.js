@@ -12,4 +12,5 @@ function loadHTML(url, elementId) {
 document.addEventListener('DOMContentLoaded', function() {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('menu.html', 'nav-placeholder');
+    loadHTML('footer.html', 'footer-placeholder');
 });
