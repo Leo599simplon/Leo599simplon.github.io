@@ -7,13 +7,33 @@
         },
         {
             "title": "Intervenir dans un environnement cloud computing",
-            "file": "https://docs.google.com/document/d/1Mfd784A9xJ7Meu0WPcPFkQKWhsWcnLvjlNE_sTYK6sg/edit",
+            "file": "Briefs/Intervenir dans un environnement cloud computing.pdfhttps://docs.google.com/document/d/1Mfd784A9xJ7Meu0WPcPFkQKWhsWcnLvjlNE_sTYK6sg/edit",
             "URL" : "https://simplonline.co/briefs/9d2a34e3-6a1d-4574-aaa5-cdae0f2f5a94"
         },
         {
             "title": "Service de déploiement Windows",
             "file": "Briefs/SP_TJ_OG_JT_Guide de Mise en Place de l'Infrastructure MDT avec WDS.pdf",
             "URL" : "https://simplonline.co/briefs/5128be16-9820-4071-bc05-2e70534f9783"
+        },
+        {
+            "title": "Mise en place d'une solution de supervision",
+            "file": "Briefs/c-m-w-a-l-n-p-l-mise-en-place-dune-solution-de-supervision-66754873e7e8b423384404.pdf",
+            "URL" : "https://simplonline.co/briefs/5e033c7f-93ef-4683-a259-78d2182f2034"
+        },
+        {
+            "title": "Redirection de ports",
+            "file": "Briefs/C.M-W.A-L.N-P.L_Configuration-de-la-redirection-de-ports.pdf",
+            "URL" : "https://simplonline.co/briefs/473c5c0a-4bfe-45da-aab7-009f5f4498ba"
+        },
+        {
+            "title": "Pare-feu logiciel pfsense",
+            "file": "Briefs/C.M-W.A-L.N-P.L_Mise-en-place-dun-Pare-feu-Logiciel-sur-VM.pdf",
+            "URL" : "https://simplonline.co/briefs/5f873536-83b2-4443-8718-3ee7e6582b52"
+        },
+        {
+            "title": "Deploiement de réseaux virtuels pour l'entreprise DECOURANT",
+            "file": "Briefs/mc-cl-og-mj-deploiement-de-reseaux-virtuels-pour-l-entreprise-decourant-6645fcac7439a343992303.pdf",
+            "URL" : "https://simplonline.co/briefs/0032e8b5-3070-463e-9e1a-168029cf0886"
         }
     ]
 }
