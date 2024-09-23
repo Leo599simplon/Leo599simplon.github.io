@@ -125,7 +125,7 @@ nav::after {
 .search-form button {
     padding: 5px 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #501919;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
@@ -133,7 +133,7 @@ nav::after {
 }
 
 .search-form button:hover {
-    background-color: #0056b3;
+    background-color: #b64e4e;
 }
 
 /* Main Content Styling */
@@ -317,4 +317,96 @@ footer {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+
+/* Style de base pour les cartes */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Animation au survol de la carte */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Titre de la carte */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Conteneur des boutons (si tu veux les centrer) */
+.card-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Style de base pour les boutons */
+.card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Style au survol des boutons */
+.card button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Style pour les boutons actifs (clic) */
+.card button:active {
+    background-color: #003d7a;
+    transform: scale(1);
+}
+
+/* Style pour les boutons avec des couleurs personnalisées */
+.card button.file-btn {
+    background-color: #8e908f;  /* Vert pour 'Voir le fichier' */ 
+    margin-right: 10px;
+}
+
+.card button.url-btn {
+    background-color: #713135;  /* Bleu clair pour 'Voir en ligne' */
+    margin-left: 10px;
+}
+
+/* Ajustements pour petits écrans */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .card-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

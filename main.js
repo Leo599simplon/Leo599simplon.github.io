@@ -1,29 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Fonction pour générer une carte
-    function generateCard(course, container, type) {
+    // Fonction pour générer une carte sans boutons (comportement original pour sheets.html)
+    function generateCardOriginal(course, container) {
         const card = document.createElement('div');
         card.className = 'card';
 
-        if (type === 'markdown') {
-            if (course.file.endsWith('.md')) {
-                card.onclick = () => {
-                    const encodedFilePath = encodeURIComponent(course.file);
-                    window.location.href = `visionneuse.html?file=${encodedFilePath}`;
-                };
-            } else {
-                card.onclick = () => {
-                    window.open(course.file, '_blank');
-                };
-            }
-        } else if (type === 'pdf') {
+        if (course.file.endsWith('.md')) {
             card.onclick = () => {
-                window.location.href = course.file;
+                const encodedFilePath = encodeURIComponent(course.file);
+                window.location.href = `visionneuse.html?file=${encodedFilePath}`;
             };
-        } else if (type === 'brief') {
-            card.onclick = () => {
-                window.location.href = course.file;
-            };
-        } else if (type === 'cours') {
+        } else {
             card.onclick = () => {
                 window.open(course.file, '_blank');
             };
@@ -31,24 +17,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const title = document.createElement('h3');
         title.textContent = course.title;
-
         card.appendChild(title);
 
-        // Si l'URL est renseignée et qu'on est sur les briefs, on ajoute un lien cliquable
-        if (type === 'brief' && course.URL) {
-            const link = document.createElement('a');
-            link.href = course.URL;
-            link.target = '_blank';  // Ouvre dans un nouvel onglet
-            link.textContent = 'Voir en ligne';
-            link.className = 'card-link';  // Ajoutez une classe si vous souhaitez styliser le lien
-            card.appendChild(link);
+        container.appendChild(card);
+    }
+
+    // Fonction pour générer une carte avec boutons (pour les autres pages)
+    function generateCardWithButtons(course, container, buttonLabel) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const title = document.createElement('h3');
+        title.textContent = course.title;
+        card.appendChild(title);
+
+        // Création du bouton pour le lien 'file'
+        const fileButton = document.createElement('button');
+        fileButton.textContent = buttonLabel;  // Texte du bouton basé sur la page
+        fileButton.classList.add('file-btn');  // Ajout de la classe CSS
+        fileButton.onclick = () => {
+            window.open(course.file, '_blank'); // Ouvre le lien 'file' dans un nouvel onglet
+        };
+        card.appendChild(fileButton);
+
+        // Si l'URL est présente, création du bouton pour le lien 'URL'
+        if (course.URL) {
+            const urlButton = document.createElement('button');
+            urlButton.textContent = 'Voir en ligne';
+            urlButton.classList.add('url-btn');  // Ajout de la classe CSS
+            urlButton.onclick = () => {
+                window.open(course.URL, '_blank'); // Ouvre le lien 'URL' dans un nouvel onglet
+            };
+            card.appendChild(urlButton);
         }
 
         container.appendChild(card);
     }
 
-    // Fonction pour charger les données JSON
-    function loadData(jsonFile, type) {
+    // Fonction pour charger les données JSON et appeler la bonne fonction selon la page
+    function loadData(jsonFile, type, buttonLabel) {
         fetch(jsonFile)
             .then(response => {
                 if (!response.ok) {
@@ -60,7 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const courseContainer = document.getElementById('cards-categories') || document.querySelector('.brief-categories');
                 if (data.courses) {
                     data.courses.forEach(course => {
-                        generateCard(course, courseContainer, type);
+                        if (type === 'markdown') {
+                            // Comportement pour sheets.html (Markdown ou PDF)
+                            generateCardOriginal(course, courseContainer);
+                        } else {
+                            // Comportement avec boutons pour les autres pages
+                            generateCardWithButtons(course, courseContainer, buttonLabel);
+                        }
                     });
                 }
             })
@@ -73,16 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentPage = window.location.pathname;
 
     if (currentPage.includes('sheets.html')) {
-        // Page des cours (Markdown ou PDF)
+        // Page des cours (Markdown ou PDF) sans boutons
         loadData('cardsSheets.json', 'markdown');
     } else if (currentPage.includes('PDF.html')) {
-        // Page des PDF
-        loadData('cardsPDF.json', 'pdf');
+        // Page des PDF avec boutons 'Voir le PDF'
+        loadData('cardsPDF.json', 'pdf', 'Voir le PDF');
     } else if (currentPage.includes('briefs.html')) {
-        // Page des briefs
-        loadData('cardsBriefs.json', 'brief');
+        // Page des briefs avec boutons 'Voir le brief'
+        loadData('cardsBriefs.json', 'brief', 'Voir le brief');
     } else if (currentPage.includes('Cours.html')) {
-        // Page des cours
-        loadData('cardsCours.json', 'cours');
+        // Page des cours avec boutons 'Voir le cour'
+        loadData('cardsCours.json', 'cours', 'Voir le cours');
     }
 });
