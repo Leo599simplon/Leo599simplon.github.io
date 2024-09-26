@@ -15,6 +15,10 @@
         {
             "title": "Linux et devops",
             "file": "PDF/The%20linux%20DevOps%20Handbook.pdf"
+        },
+        {
+            "title": "Python : Automate the boring stuff",
+            "file": "PDF/boringStuffPython.pdf"
         }
     ]
 }
