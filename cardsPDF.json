@@ -19,6 +19,14 @@
         {
             "title": "Python : Automate the boring stuff",
             "file": "PDF/boringStuffPython.pdf"
+        },
+        {
+            "title": "Clean agile",
+            "file": "PDF/agile.pdf"
+        },
+        {
+            "title": "Progit",
+            "file": "PDF/progit.pdf"
         }
     ]
 }
