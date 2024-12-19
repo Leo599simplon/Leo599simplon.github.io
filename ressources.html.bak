@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Réseaux - Ressources Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div id="nav-placeholder"></div>
+
+    <main>
+        <section class="intro">
+            <h2>Ressources Web</h2>
+            <p>Liste bien organisée des ressources pour l'administration des réseaux et systèmes.</p>
+        </section>
+
+        <div class="folder">
+            <h3>Réseaux</h3>
+            <ul>
+                <li><a href="https://docs.vyos.io/en/latest/contributing/build-vyos.html" target="_blank">Routeur logiciel Vyos</a></li>
+                <li><a href="https://www.malekal.com/transfert-de-ports-sur-un-routeur/" target="_blank">Transfert de ports sur un routeur</a></li>
+                <li><a href="https://www.fbotutos.com/commandes-dos-reseaux.html" target="_blank">Principales commandes DOS pour les réseaux</a></li>
+                <li><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html" target="_blank">CCNA Routing and Switching - Cisco</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLW8bTPfXNGdA_TprronpuNh7Ei8imYppX" target="_blank">How to Use Wireshark - YouTube</a></li>
+                <li><a href="https://support-pro.free.fr/comment-gerer-la-redirection-de-ports-dnat/" target="_blank">Gérer la redirection de port (DNAT) - Free Pro</a></li>
+                <li><a href="https://cybercademy.org/networking-projects/" target="_blank">Networking Projects | Cybercademy</a></li>
+                <li><a href="https://www.lemondeinformatique.fr/actualites/lire-tunnelvision-plombe-la-confidentialite-des-vpn-93684.html" target="_blank">TunnelVision plombe la confidentialité des VPN</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04" target="_blank">Configurer WireGuard sur Ubuntu 20.04</a></li>
+                <li><a href="https://www.it-connect.fr/les-listes-de-controle-dacces-acl-avec-cisco/" target="_blank">Listes de contrôle d’accès (ACL) avec Cisco</a></li>
+                <li><a href="https://www.it-connect.fr/cisco-configuration-du-routage-rip/" target="_blank">Configuration du routage RIP - Cisco</a></li>
+                <li><a href="https://www.it-connect.fr/ajouter-une-route-statique-sur-un-routeur-cisco%EF%BB%BF/" target="_blank">Ajouter une route statique sur un routeur Cisco</a></li>
+                <li><a href="https://www.cyberciti.biz/faq/howto-linux-renew-dhcp-client-ip-address/" target="_blank">Renouveler l'adresse IP DHCP sous Linux</a></li>
+                <li><a href="https://technonagib.fr/virtualiser-ubuntu-server-2204-lts-proxmox-ve/" target="_blank">Virtualiser Ubuntu Server 22.04 LTS avec Proxmox VE</a></li>
+            </ul>
+        </div>
+
+        <div class="folder">
+            <h3>Linux</h3>
+            <ul>
+                <li><a href="https://www.kali.org/tools/bloodhound/" target="_blank">BloodHound | Kali Linux Tools</a></li>
+                <li><a href="https://www.computernetworkingnotes.com/linux-tutorials/" target="_blank">Linux Tutorials</a></li>
+                <li><a href="https://www.it-connect.fr/gestion-dempreinte-numerique-sur-linux/" target="_blank">Gestion d'empreinte numérique sur Linux</a></li>
+                <li><a href="https://www.linuxtricks.fr/wiki/debian-installer-un-serveur-lamp-apache-mysql-php" target="_blank">Installer un serveur LAMP sous Debian</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mariadb-php-lamp-stack-on-debian-10" target="_blank">Configurer LAMP sur Debian 10</a></li>
+                <li><a href="https://www.baeldung.com/nginx-forward-proxy" target="_blank">Nginx comme proxy avancé</a></li>
+                <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-apache-as-a-reverse-proxy-with-mod_proxy-on-debian-8" target="_blank">Apache comme reverse proxy sur Debian</a></li>
+                <li><a href="https://computingforgeeks.com/how-to-configure-samba-share-on-debian/" target="_blank">Configurer Samba Share sur Debian</a></li>
+                <li><a href="https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Standalone_Server" target="_blank">Configurer Samba en mode autonome</a></li>
+                <li><a href="https://yunohost.org/fr/whatsyunohost" target="_blank">Qu'est-ce que YunoHost ?</a></li>
+                <li><a href="https://www.malekal.com/comment-lister-les-utilisateurs-de-linux/" target="_blank">Lister les utilisateurs Linux</a></li>
+                <li><a href="https://debian-facile.org/doc:systeme:commandes:gnu_linux" target="_blank">Les commandes essentielles sous GNU/Linux</a></li>
+                <li><a href="https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/" target="_blank">Ajouter un utilisateur aux sudoers sous Ubuntu</a></li>
+                <li><a href="https://www.passbolt.com/blog/how-to-configure-passbolt-with-postgresql-experimental" target="_blank">Configurer Passbolt avec PostgreSQL</a></li>
+                <li><a href="https://technonagib.fr/fonctionnalites-linux-bridge-proxmox-ve/" target="_blank">Fonctionnalités Linux Bridge sous Proxmox VE</a></li>
+            </ul>
+        </div>
+
+        <div class="folder">
+            <h3>Virtualisation</h3>
+            <ul>
+                <li><a href="https://www.informatiweb.net/tutoriels/informatique/11-virtualisation/268--virtualbox-6-0-5-2-comment-utiliser-et-configurer-les-differents-modes-d-acces-reseau-d-une-machine-virtuelle.html" target="_blank">Configurer VirtualBox (Réseau)</a></li>
+                <li><a href="https://www.it-connect.fr/tuto-vmware-workstation-lab-virtuel-pfsense/" target="_blank">Créer un lab virtuel avec VMware Workstation</a></li>
+                <li><a href="https://www.it-connect.fr/comprendre-les-differents-types-de-reseaux-de-vmware-workstation-pro/" target="_blank">Comprendre les réseaux VMware Workstation Pro</a></li>
+                <li><a href="https://forum.proxmox.com/threads/how-to-backup-proxmox-configuration-files.67789/" target="_blank">Sauvegarder la configuration de Proxmox</a></li>
+                <li><a href="https://serverfault.com/questions/677639/which-is-better-image-format-raw-or-qcow2-to-use-as-a-baseimage-for-other-vms" target="_blank">RAW ou QCOW2 : quel format pour les images VM ?</a></li>
+                <li><a href="https://5wire.co.uk/how-to-prepare-alpine-linux-image-with-cloud-init-ready-for-proxmox/" target="_blank">Préparer une image Alpine Linux avec Cloud-Init pour Proxmox</a></li>
+                <li><a href="https://pve.proxmox.com/wiki/Cloud-Init_Support" target="_blank">Support Cloud-Init sous Proxmox</a></li>
+            </ul>
+        </div>
+
+        <div class="folder">
+            <h3>Active Directory</h3>
+            <ul>
+                <li><a href="https://openclassrooms.com/fr/courses/2222496-centralisez-et-securisez-votre-annuaire-active-directory" target="_blank">Centraliser et sécuriser votre AD</a></li>
+                <li><a href="https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet" target="_blank">AD Exploitation Cheat Sheet</a></li>
+                <li><a href="https://github.com/BloodHoundAD/SharpHound" target="_blank">SharpHound : Collecteur de données AD</a></li>
+                <li><a href="https://www.it-connect.fr/cours/bloodhound-identifier-faiblesses-de-votre-active-directory/" target="_blank">BloodHound et la sécurité AD</a></li>
+                <li><a href="https://activedirectorypro.com/map-network-drives-with-group-policy/" target="_blank">Mapper des lecteurs réseau avec les GPO</a></li>
+                <li><a href="https://blog.netwrix.fr/2024/07/30/comprendre-les-cinq-roles-fsmo-et-leur-impact-sur-lactive-directory/" target="_blank">Comprendre les rôles FSMO dans Active Directory</a></li>
+            </ul>
+        </div>
+
+        <div class="folder">
+            <h3>Sécurité</h3>
+            <ul>
+                <li><a href="https://www.kaspersky.fr/resource-center/definitions/what-is-a-ssl-certificate" target="_blank">Qu'est-ce qu'un certificat SSL ?</a></li>
+                <li><a href="https://owasp.org/www-community/Vulnerability_Scanning_Tools" target="_blank">Outils de scan de vulnérabilités</a></li>
+                <li><a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a></li>
+                <li><a href="https://www.infosecmatter.com/capture-passwords-using-wireshark/" target="_blank">Capturer des mots de passe avec Wireshark</a></li>
+                <li><a href="https://www.netwrix.com/attack.html?cID=7010g000001YZB6" target="_blank">Identifier et prévenir les cyberattaques</a></li>
+                <li><a href="https://technonagib.fr/configurer-spice-proxmox-ve/" target="_blank">Configurer SPICE avec Proxmox VE</a></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+<script src="search.js"></script>
+
+</html>
